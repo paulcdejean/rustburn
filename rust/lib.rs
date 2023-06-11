@@ -12,14 +12,6 @@ extern {
 }
 
 #[wasm_bindgen]
-extern {
-    pub type Ns;
-
-    #[wasm_bindgen(method)]
-    fn tprint(this: &Ns, print: &str);
-}
-
-#[wasm_bindgen]
-pub fn greet(ns: &Ns) {
+pub fn greet(ns: &ns::Ns) {
     ns.tprint("Hello rust!");
 }
