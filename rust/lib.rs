@@ -1,3 +1,5 @@
+mod ns;
+
 use wasm_bindgen::prelude::*;
 
 #[cfg(feature = "wee_alloc")]
