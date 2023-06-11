@@ -1,17 +1,13 @@
 {
-  "name": "hello",
+  "name": "rustburn",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^4.3.9"
+    "build": "vite build"
   },
   "dependencies": {
+    "vite": "^4.3.9",
     "vite-plugin-wasm": "^3.2.2"
   }
 }
