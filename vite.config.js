@@ -7,10 +7,10 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/main.js'),
+      entry: resolve(__dirname, 'js/main.js'),
       name: 'hello',
       // the proper extensions will be added
-      fileName: 'my-hello',
+      fileName: 'rustburn',
       formats: ['es']
     },
     target: 'esnext'
