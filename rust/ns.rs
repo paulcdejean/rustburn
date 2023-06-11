@@ -11,4 +11,3 @@ extern {
     #[wasm_bindgen(method)]
     pub fn tprint(this: &Ns, print: &str);
 }
-

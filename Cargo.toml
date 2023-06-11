@@ -1,5 +1,5 @@
 [package]
-name = "hello"
+name = "rustburn"
 version = "0.1.0"
 authors = ["Paul Dejean <paulcdejean@gmail.com>"]
 edition = "2018"
