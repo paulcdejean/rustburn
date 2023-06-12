@@ -9,9 +9,11 @@ crate-type = ["cdylib", "rlib"]
 path = "rust/lib.rs"
 
 [dependencies]
-
-[dev-dependencies]
+neon = "0.10.1"
 
 [profile.release]
 # Tell `rustc` to optimize for small code size.
 opt-level = "s"
+
+[dependencies.neon]
+features = ["napi-latest"]
