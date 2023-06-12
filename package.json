@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "cargo build --target=wasm32-unknown-unknown --release && vite build"
+    "build": "wasm-pack build --target bundler && vite build"
   },
   "dependencies": {
     "bitburner-filesync": "^1.1.5",

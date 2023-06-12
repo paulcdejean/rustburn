@@ -1,5 +1,3 @@
-mod ns;
-
 use wasm_bindgen::prelude::*;
 
 #[cfg(feature = "wee_alloc")]
@@ -8,10 +6,8 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 extern {
-    fn alert(s: &str);
-}
+    pub type Ns;
 
-#[wasm_bindgen]
-pub fn greet(ns: &ns::Ns) {
-    ns.tprint("Hello rust!");
+    #[wasm_bindgen(method)]
+    pub fn tprint(this: &Ns, print: &str);
 }
